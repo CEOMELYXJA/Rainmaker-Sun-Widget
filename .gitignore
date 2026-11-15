@@ -1,0 +1,5 @@
+RainmakerSunWidget/@Resources/Images/soleil.jpg
+RainmakerSunWidget/@Resources/Images/*.tmp
+RainmakerSunWidget/@Resources/donnees-*.tmp
+__pycache__/
+*.pyc

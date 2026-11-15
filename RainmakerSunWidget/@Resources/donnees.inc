@@ -1,0 +1,20 @@
+﻿[Variables]
+Rayons=--
+RayonsHeure=--
+RayonsEtat=Indisponible
+Vent=--
+VentHeure=--
+VentEtat=Indisponible
+Bz=--
+BzHeure=--
+BzEtat=Indisponible
+Flux=--
+FluxHeure=--
+FluxEtat=Indisponible
+Eruption=--
+EruptionHeure=--
+ImageHeure=--
+ImageEtat=indisponible
+Etat=En attente
+MAJ=--
+PremierDemarrage=1
