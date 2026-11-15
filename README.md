@@ -1,23 +1,25 @@
-# Rainmaker Sun Widget — Notre Soleil et Veille solaire
+# Rainmaker Sun Widget — Notre Soleil and Veille solaire
 
-Deux widgets [Rainmeter](https://www.rainmeter.net/) pour Windows : **Notre Soleil**, au format de Notre planète, et **Veille solaire**, au format de Veille cosmique. Les panneaux sont indépendants, partagent leurs données et restent configurables par clic droit (petit, moyen, grand). Le bouton ↻ actualise les données ; la mise à jour est aussi automatique au premier lancement et toutes les cinq minutes.
+Two [Rainmeter](https://www.rainmeter.net/) widgets for Windows: **Notre Soleil** (“Our Sun”), based on the compact format of Notre planète, and **Veille solaire** (“Solar Watch”), based on the format of Veille cosmique. The panels are independent, share their data, and offer small, medium, and large sizes through the right-click menu. The ↻ button refreshes the data; updates also run automatically on first launch and every five minutes.
+
+The widgets themselves are in French.
 
 ## Installation
 
-1. Installer Rainmeter si nécessaire, puis copier le dossier `RainmakerSunWidget` dans `Documents\Rainmeter\Skins`.
-2. Dans **Gérer Rainmeter**, actualiser la liste des skins. Ouvrir `RainmakerSunWidget > SoleilCompact > Soleil.ini`, puis `RainmakerSunWidget > VeilleSolaire > Veille.ini`.
-3. Déplacer les deux widgets sur l'écran voulu. Cliquer sur ↻ pour actualiser immédiatement ; le premier chargement peut prendre quelques secondes.
+1. Install Rainmeter if needed, then copy the `RainmakerSunWidget` folder into `Documents\Rainmeter\Skins`.
+2. In **Manage Rainmeter**, refresh the skin list. Load `RainmakerSunWidget > SoleilCompact > Soleil.ini`, then `RainmakerSunWidget > VeilleSolaire > Veille.ini`.
+3. Move the widgets to your preferred screen. Click ↻ to refresh immediately; the first update may take a few seconds.
 
-Une connexion Internet est nécessaire. Si une mesure est indisponible ou trop ancienne, elle apparaît sous forme de tirets ; survoler une ligne affiche l'heure UTC et l'état de sa source. L'image peut être différée et sa date correspond au téléchargement, pas nécessairement à la prise de vue.
+An internet connection is required. If a measurement is unavailable or too old, it is displayed as dashes. Hover over a line to see its UTC timestamp and source status. The image may be delayed; its displayed date is the download time, not necessarily the time of observation.
 
-## Sources et limites
+## Sources and limitations
 
-- [NASA SDO, image AIA 304 Å](https://sdo.gsfc.nasa.gov/data/) : image ultraviolette colorisée, différente de la couleur visible à l'œil nu.
-- [NOAA Space Weather Prediction Center](https://www.swpc.noaa.gov/content/data-access) : classe du flux de rayons X GOES, classe et heure du dernier maximum d'éruption communiqué par ce flux, vitesse et composante Bz du vent solaire près de la Terre, et flux radio F10,7. Le dernier maximum est un événement daté et ne représente pas la classe courante.
-- Les indicateurs ne sont pas des prévisions ni des mesures locales. La classe de rayons X et les mesures du vent sont masquées si leurs dates dépassent respectivement 60 et 90 minutes ; le flux F10,7 est masqué après 72 heures.
+- [NASA SDO, AIA 304 Å image](https://sdo.gsfc.nasa.gov/data/): a colorized ultraviolet image, different from what the Sun looks like in visible light.
+- [NOAA Space Weather Prediction Center](https://www.swpc.noaa.gov/content/data-access): GOES X-ray flux class; the class and time of the latest flare maximum reported by that feed; solar wind speed and Bz component near Earth; and the F10.7 radio flux. The latest maximum is a dated event and does not represent the current class.
+- These indicators are neither forecasts nor local measurements. X-ray and solar wind measurements are hidden when they are more than 60 and 90 minutes old, respectively; the F10.7 flux is hidden after 72 hours.
 
-`donnees.inc` est un état initial régénéré à chaque actualisation. L'image téléchargée `@Resources/Images/soleil.jpg` et les fichiers temporaires sont générés localement et exclus du dépôt. Les requêtes se font directement auprès de la NOAA et de la NASA.
+`donnees.inc` contains an initial state that is regenerated on each refresh. The downloaded image `@Resources/Images/soleil.jpg` and temporary files are generated locally and excluded from the repository. Requests go directly to NOAA and NASA.
 
-## Attribution et licence
+## Attribution and license
 
-Le panneau compact reprend la structure de **Planète compacte**, adaptation de **Jord** par **crosseout**, sous licence [CC BY-NC-SA 3.0](https://creativecommons.org/licenses/by-nc-sa/3.0/). Le présent projet est distribué selon cette même licence. Les données et images NASA/NOAA restent soumises aux conditions de leurs fournisseurs et ne sont pas incluses dans le dépôt.
+The compact panel uses the structure of **Planète compacte**, an adaptation of **Jord** by **crosseout**, licensed under [CC BY-NC-SA 3.0](https://creativecommons.org/licenses/by-nc-sa/3.0/). This project is distributed under the same license. NASA and NOAA data and images remain subject to their providers' terms and are not included in the repository.
